@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MuseoModerno', cursive;
+}
+
+/*Ni kita panggil Navbar*/
+.navbar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul
+{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li
+{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a
+{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover
+{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Ni utk home */
+#home
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('../Bg pics/Sunset.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main
+{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 32%;
+}
+.headings
+{
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.welcome
+{
+    text-align: justify;
+    font-size: 2rem;
+    padding: 10px;
+}
+.butang
+{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.butang:hover
+{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+/* About me punye kawasan */
+#about
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#about::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('../Bg pics/Sunset.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.aboutMain
+{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic
+{
+    display: flex;
+}
+#pic img
+{
+    width: 280px;
+    height: 350px;
+    box-shadow: 10px 10px 20px black;
+}
+#intro
+{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+}
+#intro h2
+{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+/* coding languages */
+#clanguages
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+.gallery
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-sizing: border box;
+}
+.gallery img
+{
+    position: static;
+    width: 240px;
+    height: 240px;
+    display: inline-block;
+    margin-left: 5px;
+    border-radius: 50%;
+    transition: 0.5s
+}
+.gallery img:hover
+{
+    width: 245px;
+    height: 245px;
+    border-radius: 50%;
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px white
+}
+
+/* Hobby punye kawasan */
+#hobby
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#hobby::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('../Bg pics/Sunset.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.row
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box
+{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    color:black;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(255,45,45)50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover
+{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(255,45,45);
+}
+.box img
+{
+    width: 80px;
+    height: 80px;
+    background-color: none;
+    padding: 10px;
+}
+
+/* Highlights */
+#highlights
+{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    padding: 10px;
+}
+.clipstable{
+    position: static;
+    width: 94%;
+    left: 3%;
+    margin-top: 45px;
+    height: 1000px;
+    background-color: transparent;
+}
+.clipstabletd{
+    width: 60%;
+}
+.clipstables
+{
+    border: 0;
+    height: 1000px;
+    width: 100%;
+
+}
+.clipsinfo{
+    width: 100%;
+    margin-left: 20%;
+}
+.clipsinfo h1,h2{
+    margin-bottom: 15px;
+    color: white;
+}
+iframe{
+    margin-left: 35%;
+    width: 56.25%;
+    height: 90%;
+    border: 0;
+}
+
+/*Contact lah saya hehe*/
+#contactme
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    background-size: cover;
+}
+#contactme::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('../Bg pics/Sunset.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.contact
+{
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+}
+.contact .content p
+{
+    font-weight: 500;
+    font-size: 2rem;
+    color: #fff;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .cbox
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .cbox .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo.cbox .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo.cbox .text h3
+{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactForm
+{
+    width: 500px;
+    position: static;
+    padding: 40px;
+    background: #fff;
+    color: black;
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: black;
+    font-weight: 1000;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: black;
+}
+.contactForm .inputRadio span
+{
+    padding: 5px;
+    margin-right: 20px;
+    position: relative;
+    color: black;
+}
+
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span
+{
+    color: #e91e63;
+    font-weight: 800;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color:white ;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactInfo
+    {
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm
+    {
+        width: 100%;
+    }
+}
